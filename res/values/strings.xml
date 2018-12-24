@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">XCUZME</string>
+
+    <string name="caller_label">CALLER</string>
+    <string name="voice_label">VOICE YOU\'RE SPEAKING WITH</string>
+    <string name="time_label">TIME OF CALL</string>
+
+    <string name="office_female_text">Office\nFemale</string>
+    <string name="office_male_text">Office\nMale</string>
+    <string name="friend_female_text">Friend\nFemale</string>
+    <string name="friend_male_text">Friend\nMale</string>
+
+    <string name="time_text">Click to set time</string>
+
+    <string name="stand_by_string">STAND BY</string>
+    <string name="tap_mode">The app is in tap mode</string>
+    <string name="select_mode">Select the mode</string>
+    <string name="call_in_time" formatted="false">%s calls you at %s</string>
+
+    <string name="switch_text">Set stand by mode</string>
+
+    <string name="select_person">Please select a person</string>
+    <string name="select_voice">Please select a voice</string>
+
+    <string name="start_text">Start to Set</string>
+    <string name="cancel_text">Cancel</string>
+</resources>

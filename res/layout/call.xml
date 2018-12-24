@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="#343434"
+                android:layout_height="match_parent" >
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:background="#1976d2"
+                  android:padding="5dp"
+                  android:orientation="vertical">
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/name_text"
+                  android:gravity="center"
+                  style="@style/Xcusem.text.main.header"
+                  android:text="Neighbors"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:id="@+id/phone_text"
+                  style="@style/Xcusem.text.main.white"
+                  android:text="+123-00-01-21"/>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:scaleType="center"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/call_pad_img"/>
+
+        <ImageView
+                android:id="@+id/person_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:id="@+id/answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/ic_lockscreen_answer" />
+
+        <Button
+                android:id="@+id/decline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/ic_lockscreen_decline" />
+    </RelativeLayout>
+
+
+</LinearLayout>

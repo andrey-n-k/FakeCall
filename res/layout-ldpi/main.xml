@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="#1976d2"
+              android:layout_height="match_parent">
+
+    <ScrollView android:layout_width="match_parent"
+                android:id="@+id/scroll_view"
+                android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:paddingTop="10dp"
+                      android:layout_height="match_parent">
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      style="@style/Xcusem.text.main.header"
+                      android:paddingTop="10dp"
+                      android:text="@string/app_name"
+                      android:gravity="center_horizontal"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:paddingLeft="25dp"
+                      android:paddingRight="25dp"
+                      android:text="@string/caller_label"
+                      style="@style/Xcusem.text.main.title"/>
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="@dimen/caller_height"
+                            android:layout_marginTop="5dp"
+                            android:clickable="true"
+                            android:paddingLeft="25dp"
+                            android:paddingRight="25dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:background="@drawable/menu_button"
+                            android:id="@+id/select_person_btn">
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:orientation="horizontal">
+                    <RelativeLayout android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                        <ImageView
+                                android:layout_width="@dimen/person_image_side"
+                                android:layout_height="@dimen/person_image_side"
+                                android:src="@drawable/caller_default"/>
+                        <com.xcuzme.app.ui.uihelper.ImageViewRounded
+                                android:layout_width="@dimen/person_image_side"
+                                android:layout_height="@dimen/person_image_side"
+                                android:id="@+id/person_image"
+                                android:scaleType="centerInside"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:layout_marginLeft="10dp"
+                                  android:gravity="center_vertical"
+                                  android:orientation="vertical">
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:id="@+id/name_text"
+                                  style="@style/Xcusem.text.main.white"
+                                  android:text="@string/select_person"/>
+                        <TextView android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:id="@+id/phone_text"
+                                  style="@style/Xcusem.text.main.white.small"
+                                />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"
+                           android:src="@drawable/arrow"/>
+            </RelativeLayout>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:paddingLeft="25dp"
+                      android:paddingRight="25dp"
+                      android:layout_marginTop="10dp"
+                      android:text="@string/voice_label"
+                      style="@style/Xcusem.text.main.title"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:gravity="center"
+                          android:id="@+id/voice_group"
+                          android:layout_marginLeft="25dp"
+                          android:layout_marginTop="5dp"
+                          android:layout_marginRight="15dp"
+                          android:orientation="horizontal">
+                <LinearLayout android:layout_width="@dimen/voice_image_side"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:clickable="true"
+                              android:id="@+id/voice_1"
+                              android:layout_weight="1">
+                    <LinearLayout android:layout_width="@dimen/voice_image_side"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  android:gravity="center"
+                                  android:clickable="false"
+                                  android:layout_weight="1">
+                        <CheckBox android:layout_width="@dimen/voice_image_side"
+                                  android:layout_height="@dimen/voice_image_side"
+                                  android:clickable="false"
+                                  android:button="@android:color/transparent"
+                                  android:background="@drawable/english_female"/>
+                        <TextView android:layout_width="wrap_content"
+                                  style="@style/Xcusem.text.main.white.small.twolines"
+                                  android:text="@string/office_female_text"
+                                  android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="@dimen/voice_image_side"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:gravity="left"
+                              android:id="@+id/voice_2"
+                              android:clickable="true"
+                              android:layout_weight="1">
+                    <LinearLayout android:layout_width="@dimen/voice_image_side"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  android:gravity="center"
+                                  android:clickable="false"
+                                  android:layout_weight="1">
+                        <CheckBox android:layout_width="@dimen/voice_image_side"
+                                  android:layout_height="@dimen/voice_image_side"
+                                  android:clickable="false"
+                                  android:button="@android:color/transparent"
+                                  android:background="@drawable/english_male"/>
+                        <TextView android:layout_width="wrap_content"
+                                  style="@style/Xcusem.text.main.white.small.twolines"
+                                  android:text="@string/office_male_text"
+                                  android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="@dimen/voice_image_side"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:gravity="left"
+                              android:clickable="true"
+                              android:id="@+id/voice_3"
+                              android:layout_weight="1">
+                    <LinearLayout android:layout_width="@dimen/voice_image_side"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  android:gravity="center"
+                                  android:clickable="false"
+                                  android:layout_weight="1">
+                        <CheckBox android:layout_width="@dimen/voice_image_side"
+                                  android:layout_height="@dimen/voice_image_side"
+                                  android:clickable="false"
+                                  android:button="@android:color/transparent"
+                                  android:background="@drawable/spanish_female"/>
+                        <TextView android:layout_width="wrap_content"
+                                  style="@style/Xcusem.text.main.white.small.twolines"
+                                  android:text="@string/friend_female_text"
+                                  android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="@dimen/voice_image_side"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:gravity="left"
+                              android:clickable="true"
+                              android:id="@+id/voice_4"
+                              android:layout_weight="1">
+                    <LinearLayout android:layout_width="@dimen/voice_image_side"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  android:gravity="center"
+                                  android:clickable="false"
+                                  android:layout_weight="1">
+                        <CheckBox android:layout_width="@dimen/voice_image_side"
+                                  android:layout_height="@dimen/voice_image_side"
+                                  android:clickable="false"
+                                  android:button="@android:color/transparent"
+                                  android:background="@drawable/spanish_male"/>
+                        <TextView android:layout_width="wrap_content"
+                                  style="@style/Xcusem.text.main.white.small.twolines"
+                                  android:text="@string/friend_male_text"
+                                  android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:paddingLeft="25dp"
+                      android:paddingRight="25dp"
+                      android:layout_marginTop="15dp"
+                      android:text="@string/time_label"
+                      style="@style/Xcusem.text.main.title"/>
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="@dimen/caller_height"
+                            android:layout_marginTop="5dp"
+                            android:clickable="true"
+                            android:paddingLeft="25dp"
+                            android:paddingTop="5dp"
+                            android:id="@+id/time_btn"
+                            android:paddingBottom="5dp"
+                            android:background="@drawable/menu_button">
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:gravity="center_vertical"
+                              android:orientation="horizontal">
+                    <ImageView
+                            android:layout_width="@dimen/person_image_side"
+                            android:layout_height="@dimen/person_image_side"
+                            android:src="@drawable/clock"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_marginLeft="10dp"
+                              style="@style/Xcusem.text.main.white"
+                              android:text="@string/time_text"/>
+                </LinearLayout>
+                <ImageView android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:layout_marginRight="25dp"
+                           android:id="@+id/time_arrow_image"
+                           android:layout_alignParentRight="true"
+                           android:layout_centerVertical="true"
+                           android:src="@drawable/arrow"/>
+                <RelativeLayout android:layout_width="70dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/delete_time_btn"
+                                android:visibility="gone"
+                                android:layout_alignParentRight="true">
+                    <ImageView android:layout_width="20dp"
+                               android:layout_height="20dp"
+                               android:layout_marginRight="25dp"
+                               android:layout_alignParentRight="true"
+                               android:layout_centerVertical="true"
+                               android:src="@drawable/delete"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:clickable="true"
+                            android:paddingLeft="25dp"
+                            android:paddingTop="5dp"
+                            android:id="@+id/standby_btn"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="25dp"
+                            android:background="@drawable/menu_button">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_centerVertical="true"
+                          style="@style/Xcusem.text.main.white"
+                          android:text="@string/switch_text"/>
+                <RelativeLayout android:layout_width="@dimen/switch_width"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true">
+                    <View android:layout_width="match_parent"
+                          android:layout_height="25dp"
+                          android:layout_margin="7dp"
+                          android:id="@+id/seek_bar_background"
+                          android:layout_centerInParent="true"
+                          android:background="@drawable/_switch_bcg_1"/>
+                    <SeekBar
+                            android:id="@+id/switch_custom"
+                            android:layout_width="@dimen/switch_width"
+                            android:layout_height="wrap_content"
+                            android:max="100"
+                            android:layout_centerInParent="true"
+                            android:progressDrawable="@android:color/transparent"
+                            android:thumb="@drawable/switch_1"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="25dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingRight="25dp"
+                            android:background="@drawable/menu_button">
+                <ImageView android:layout_width="40dp"
+                           android:layout_height="40dp"
+                           android:id="@+id/info_button"
+                           android:src="@drawable/ic_info"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:visibility="gone"
+                            android:id="@+id/footer"
+                            android:layout_marginTop="15dp"
+                            android:padding="25dp">
+                <ToggleButton android:layout_width="@dimen/start_btn_width"
+                              android:layout_height="@dimen/caller_height"
+                              android:clickable="true"
+                              android:layout_centerInParent="true"
+                              android:paddingLeft="20dp"
+                              android:paddingRight="20dp"
+                              android:id="@+id/start_btn"
+                              android:textOff="@string/start_text"
+                              android:textOn="@string/cancel_text"
+                              android:text="@string/start_text"
+                              style="@style/Xcusem.text.main.footer.big"
+                              android:button="@android:color/transparent"
+                              android:background="@drawable/start_btn"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

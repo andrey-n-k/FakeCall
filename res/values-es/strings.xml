@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">XCUZME</string>
+
+    <string name="caller_label">CONTACTO</string>
+    <string name="voice_label">SELECIONE TIPO DE VOZ DE AUDIO </string>
+    <string name="time_label">HORA DE LA LLAMADA</string>
+
+    <string name="office_female_text">Aeropuerto</string>
+    <string name="office_male_text">Oficina</string>
+    <string name="friend_female_text">Amiga</string>
+    <string name="friend_male_text">Bomberos</string>
+
+    <string name="time_text">Clic aqui para Programar la Hora</string>
+
+    <string name="stand_by_string">MODO DE ESPERA</string>
+    <string name="tap_mode">Modo de Espera</string>
+
+    <string name="switch_text">Clic aqui para Modo de Espera</string>
+
+    <string name="select_person">Please select a person</string>
+    <string name="select_voice">Selecione tipo de Voz de audio</string>
+
+    <string name="start_text">Empiezo</string>
+    <string name="cancel_text">Cancelar</string>
+</resources>
